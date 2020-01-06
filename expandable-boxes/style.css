@@ -1,0 +1,23 @@
+details {
+    width: 400px;
+    border-radius: 8px;
+}
+
+details p {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #424242;
+}
+
+details[open] {
+    background: #FAFAFA;
+}
+
+summary {
+    padding: 20px;
+    background-color: #8125E2;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}

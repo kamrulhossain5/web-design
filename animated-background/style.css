@@ -1,0 +1,30 @@
+.parent {
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 600px;
+    height: 500px;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+}
+
+.moving-gradient {
+    background: linear-gradient(150deg, #8125E2, #45FCE4);
+    background-size: 200% 200%;
+    animation: moveGradient 10s ease infinite;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    0% { background-position: 0 50%; }
+}

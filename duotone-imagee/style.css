@@ -1,0 +1,32 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url('https://gs.columbia.edu/sites/default/files/styles/cu_crop/public/content/News/columbia-gs-news-campus-shot-alma-butler-library.png?itok=_pjYOX-8') center center no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.duotone::before, .duotone::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.duotone::before {
+    background-color: #FF6EB6;
+    mix-blend-mode: multiply;
+}
+
+.duotone::after {
+    background-color: #007EFF;
+    mix-blend-mode: lighten;
+}

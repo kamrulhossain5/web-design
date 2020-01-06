@@ -1,0 +1,42 @@
+.toggle-modal {
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0, 0.23);
+    background: linear-gradient(-30deg, #4A00E0, #8E2DE2);
+    z-index: 0;
+}
+
+#modal {
+    position: fixed;
+    min-height: 70vh;
+    width: 500px;
+    background-color: #fff;
+    color: #333333;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-250%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0, 0.23);
+    border-radius: 4px;
+    z-index: 11;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+#modal.is-open {
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    transform: rotate(45deg);
+    font-size: 30px;
+    cursor: pointer;
+}

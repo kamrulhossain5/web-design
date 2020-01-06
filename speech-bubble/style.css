@@ -1,0 +1,31 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 600px;
+    height: 260px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #8E2DE2;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+}
+
+.speech-bubble {
+    position: relative;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    height: 20px;
+    width: 20px;
+    background: inherit;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}

@@ -1,0 +1,14 @@
+.image-wrapper {
+    width: 800px;
+    height: 534px;
+    overflow: hidden;
+}
+
+.image-effect {
+    height: 100%;
+    transition: filter 200ms linear;
+}
+
+.image-effect:hover {
+    filter: blur(2px) saturate(1.7);
+}
