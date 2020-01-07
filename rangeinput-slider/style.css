@@ -1,0 +1,19 @@
+.slider-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 12px;
+    background: #F5F5F5;
+    outline: none;
+    border-radius: 25px;
+}
+
+.slider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #F91890;
+    cursor: pointer;
+    border-radius: 50%;
+}

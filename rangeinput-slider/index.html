@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Design</title>
+</head>
+<body>
+    <div class="slider-container">
+        <input type="range" min="1" max="100" value="50" class="slider-input" id="slider" onchange="setValue()"/>
+    </div>
+    <div class="slider-result"><h1 id="result"></h1></div>
+
+    <script>
+        var slider = document.getElementById('slider')
+        var element = document.getElementById('result')
+        element.innerHTML = slider.value
+        
+        slider.oninput = function() {
+            element.innerHTML = this.value;
+        }
+    </script>
+</body>
+</html>
