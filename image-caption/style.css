@@ -1,0 +1,25 @@
+figure {
+    max-width: 300px;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30),
+                0 15px 12px rgba(0,0,0,0.22);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    text-align: right;
+    color: #fff;
+    font-size: .9em;
+}
+
+figcaption .title {
+    line-height: 24px;
+    font-weight: 300;
+}
