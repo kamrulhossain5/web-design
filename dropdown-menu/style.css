@@ -1,0 +1,37 @@
+.menu {
+    display: flex;
+    list-style-type: none;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+                0 6px 6px rgba(0,0,0,0.23);
+}
+
+.menu-item {
+    position: relative;
+    padding: 10px 20px;
+    border-right: 1px solid #EEEEEE;
+    color: #212121;
+    background: #fff;
+    transition: background .3s linear;
+}
+
+.menu-item:hover {
+    background: #F5F5F5;
+}
+
+.sub-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    opacity: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all .2s linear;
+}
+
+.has-child:hover .sub-menu {
+    opacity: 1;
+    transform: scaleY(1);
+}
