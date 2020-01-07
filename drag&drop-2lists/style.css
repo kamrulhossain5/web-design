@@ -1,0 +1,30 @@
+.list-container {
+    width: 300px;
+    height: 350px;
+    margin: 0 40px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    padding: 15px 20px;
+    color: #616161;
+    cursor: grab;
+}
+
+li:nth-child(even) {
+    background-color: #FAFAFA;
+}
+
+li:nth-child(odd) {
+    background-color: #EEEEEE;
+}
