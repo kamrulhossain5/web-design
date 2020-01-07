@@ -1,0 +1,13 @@
+.loading-spinner {
+    width: 130px;
+    height: 130px;
+    border-right: 8px solid #007EFF;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
