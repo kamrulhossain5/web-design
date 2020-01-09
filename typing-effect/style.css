@@ -1,0 +1,20 @@
+.intro {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.4em;
+    color: #007EFF;
+    width: 265px;
+    border-right: 2px solid rgba(0, 0, 0, .87);
+    animation: animIntro 3.5s steps(23, end),
+               animBar 1s step-end infinite;
+}
+
+@keyframes animIntro {
+    0% { width:0; }
+    100% { width:265px; }
+}
+
+@keyframes animBar {
+    0%, 100% { border-color: rgba(0,0,0,0); }
+    50% { border-color: rgba(0, 0, 0, .87) }
+}
