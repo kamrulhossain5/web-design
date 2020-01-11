@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slideshow"></div>
+    </div>
+
+    <script>
+        var slideshow = document.querySelector('.slideshow');
+        var count = 0;
+        
+        var images = ['https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&w=1000&q=80', 'https://i.pinimg.com/originals/5c/d6/28/5cd628be7952ed87e9cff9ef5cd19eb7.jpg']
+        var limit = images.length-1;
+
+        window.addEventListener("load", () => {
+            setInterval( () => {
+                if(count=limit) {
+                    count=0;
+                }
+                else {
+                    count++;
+                }
+                slideshow.style.backgroundImage=`url(${images[count]})`;
+            } ,2000);
+        })
+    </script>
+</body>
+</html>
