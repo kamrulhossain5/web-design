@@ -1,0 +1,69 @@
+.timeline-container {
+    position: relative;
+    width: 600px;
+    margin: 150px auto 0 auto;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #F5F5F5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.text-wrapper {
+    padding: 16px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+
+.text-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #8125E2;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -10px;
+}
+
+.text {
+    padding: 15px 15px 15px 17px;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+
+.text h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.text p {
+    color: #616161;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+}
