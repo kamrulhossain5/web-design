@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Design</title>
+</head>
+<body>
+    <script>
+        function createStars(type, quantity) {
+            for (let i = 0; i < quantity; i++) {
+                var star = document.createElement('div');
+                star.classList.add('star', `type-${type}`);
+                star.style.left = `${randomNumber(1, 99)}%`;
+                star.style.bottom = `${randomNumber(1, 99)}%`;
+                star.style.animationDuration = `${randomNumber(50, 200)}s`;
+                document.body.appendChild(star);
+            }
+        }
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * max) + min;
+        }
+
+        createStars(1, 100);
+        createStars(2, 85);
+        createStars(3, 70);
+    </script>
+</body>
+</html>
